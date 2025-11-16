@@ -7,7 +7,7 @@ import {
 
 export async function getTasksService() {
   const response = await fetchTasksApi();
-  return response.data; // anggap backend return List<TaskResponse>
+  return response.data;
 }
 
 export async function createTaskService(task) {

@@ -3,13 +3,11 @@
     <div class="w-full max-w-md bg-white shadow-md rounded-lg p-6">
       <h2 class="text-2xl font-semibold mb-4 text-center">Login</h2>
 
-      <!-- Error global -->
       <p v-if="serverError" class="text-red-500 text-sm mb-3">
         {{ serverError }}
       </p>
 
       <form @submit.prevent="onSubmit" class="space-y-4">
-        <!-- Username -->
         <div>
           <label class="block text-sm font-medium mb-1">Username</label>
           <input
@@ -23,7 +21,6 @@
           </p>
         </div>
 
-        <!-- Password -->
         <div>
           <label class="block text-sm font-medium mb-1">Password</label>
           <div class="relative">
@@ -46,7 +43,6 @@
           </p>
         </div>
 
-        <!-- Submit -->
         <button
           type="submit"
           :disabled="loading"
@@ -82,7 +78,6 @@ export default {
   },
   methods: {
     validate() {
-      // reset error
       this.errors.username = "";
       this.errors.password = "";
       this.serverError = "";
@@ -114,7 +109,6 @@ export default {
 
         this.$router.push({ name: "tasks" });
       } catch (err) {
-        // backend-mu melempar RuntimeException untuk invalid credentials
         this.serverError =
           err.response?.data?.message ||
           "Login gagal. Periksa username/password.";

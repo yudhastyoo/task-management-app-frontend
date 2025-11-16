@@ -5,7 +5,6 @@ export function fetchTasksApi() {
 }
 
 export function createTaskApi(payload) {
-  // payload: { title, description, status }
   return http.post("/api/tasks", payload);
 }
 

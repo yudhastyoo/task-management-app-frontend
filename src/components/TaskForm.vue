@@ -4,13 +4,11 @@
       {{ isEdit ? "Edit Task" : "Create Task" }}
     </h3>
 
-    <!-- Error global -->
     <p v-if="serverError" class="text-red-500 text-sm mb-3">
       {{ serverError }}
     </p>
 
     <form @submit.prevent="onSubmit" class="space-y-4">
-      <!-- Title -->
       <div>
         <label class="block text-sm font-medium mb-1">Title</label>
         <input
@@ -23,7 +21,6 @@
         </p>
       </div>
 
-      <!-- Description -->
       <div>
         <label class="block text-sm font-medium mb-1">Description</label>
         <textarea
@@ -36,7 +33,6 @@
         </p>
       </div>
 
-      <!-- Status -->
       <div>
         <label class="block text-sm font-medium mb-1">Status</label>
         <select

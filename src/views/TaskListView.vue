@@ -3,7 +3,6 @@
     <div class="flex justify-between items-center">
       <div>
         <h2 class="text-2xl font-semibold">Tasks</h2>
-        <!-- <p class="text-sm text-gray-500">Kelola daftar tugasmu.</p> -->
       </div>
       <button
         @click="openCreate"
@@ -13,12 +12,10 @@
       </button>
     </div>
 
-    <!-- Error global -->
     <p v-if="serverError" class="text-red-500 text-sm">
       {{ serverError }}
     </p>
 
-    <!-- Table -->
     <div class="bg-white shadow rounded-lg overflow-hidden">
       <table class="min-w-full text-sm table-fixed">
         <thead>
@@ -88,7 +85,6 @@
       </table>
     </div>
 
-    <!-- Form (create/edit) -->
     <div
       v-if="showForm"
       class="fixed inset-0 bg-black/40 flex items-center justify-center"

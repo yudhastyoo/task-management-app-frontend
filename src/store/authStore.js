@@ -2,7 +2,6 @@ import { reactive } from "vue";
 
 const TOKEN_KEY = "task_app_token";
 
-// 1️⃣ jadikan state reactive 👇
 const state = reactive({
   token: localStorage.getItem(TOKEN_KEY) || "",
 });
@@ -35,6 +34,6 @@ export function useAuthStore() {
     getToken,
     isLoggedIn,
     logout,
-    state, // 2️⃣ expose state bila perlu
+    state,
   };
 }
