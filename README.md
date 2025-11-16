@@ -2,16 +2,12 @@
 
 Frontend untuk Task Management App
 
-> Aplikasi Task Management ini dibuat oleh **Yudha Papua Setyo Atmaji**.
-
 ## Tech Stack
 
 - Vue.js 3
 - Vite
 - Axios
 - LocalStorage (JWT Token)
-
----
 
 ## Requirements
 
@@ -20,14 +16,12 @@ Pastikan sudah terinstall:
 - Node.js 18+
 - NPM / Yarn / PNPM
 
----
-
 ## Cara Menjalankan
 
 1. Clone repository:
 
 ```bash
-git clone https://github.com/username/task_management_app_frontend.git
+git clone https://github.com/yudhastyoo/task-management-app-frontend.git
 ```
 
 2. Masuk ke folder task_management_app_frontend:
@@ -53,3 +47,5 @@ npm run dev
 ```bash
 http://localhost:5173
 ```
+
+> Aplikasi Task Management ini dibuat oleh **Yudha Papua Setyo Atmaji**.
