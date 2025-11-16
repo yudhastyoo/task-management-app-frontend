@@ -3,6 +3,7 @@
     <header class="bg-white shadow mb-4">
       <div
         class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center"
+        :class="isLoggedIn ? 'justify-between' : 'justify-center'"
       >
         <h1 class="text-xl font-semibold">Task Management App</h1>
         <button
