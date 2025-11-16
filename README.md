@@ -1,4 +1,3 @@
-````md
 # Task Management App - Frontend (Vue 3 + Vite)
 
 Frontend untuk Task Management App
@@ -54,4 +53,3 @@ npm run dev
 ```bash
 http://localhost:5173
 ```
-````
